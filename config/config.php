@@ -11,6 +11,8 @@
 
 return [
 
+    'header_name'=>env('JWT_HEADER_NAME'),
+    'header_prefix'=>env('JWT_HEADER_PREFIX'),
     /*
     |--------------------------------------------------------------------------
     | JWT Authentication Secret

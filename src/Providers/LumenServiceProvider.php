@@ -39,4 +39,11 @@ class LumenServiceProvider extends AbstractServiceProvider
             new LumenRouteParams,
         ]);
     }
+
+    /**
+     * @return AuthHeaders
+     */
+    private function getAuthHeaders(){
+        return (new AuthHeaders)->setHeaderPrefix($this->config('header_prefix'))->setHeaderName($this->config('header_name'));
+    }
 }

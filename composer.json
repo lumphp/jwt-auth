@@ -1,6 +1,7 @@
 {
     "name": "lumphp/jwt-auth",
     "description": "JSON Web Token Authentication forked from tymondesigns/jwt-auth",
+    "version": "0.1.0",
     "keywords": [
         "auth",
         "authentication",

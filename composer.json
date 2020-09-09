@@ -51,16 +51,13 @@
         }
     },
     "extra": {
-        "branch-alias": {
-            "dev-develop": "1.0-dev"
-        },
         "laravel": {
             "aliases": {
                 "JWTAuth": "Tymon\\JWTAuth\\Facades\\JWTAuth",
                 "JWTFactory": "Tymon\\JWTAuth\\Facades\\JWTFactory"
             },
             "providers": [
-                "Tymon\\JWTAuth\\Providers\\LaravelServiceProvider"
+                "Tymon\\JWTAuth\\Providers\\LumenServiceProvider"
             ]
         }
     },

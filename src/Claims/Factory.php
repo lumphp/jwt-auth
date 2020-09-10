@@ -15,6 +15,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Tymon\JWTAuth\Support\Utils;
 
+/**
+ * Class Factory
+ *
+ * @package Tymon\JWTAuth\Claims
+ */
 class Factory
 {
     /**

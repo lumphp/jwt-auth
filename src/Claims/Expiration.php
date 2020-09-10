@@ -13,6 +13,11 @@ namespace Tymon\JWTAuth\Claims;
 
 use Tymon\JWTAuth\Exceptions\TokenExpiredException;
 
+/**
+ * Class Expiration
+ *
+ * @package Tymon\JWTAuth\Claims
+ */
 class Expiration extends Claim
 {
     use DatetimeTrait;

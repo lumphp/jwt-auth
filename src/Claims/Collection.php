@@ -14,6 +14,11 @@ namespace Tymon\JWTAuth\Claims;
 use Illuminate\Support\Collection as IlluminateCollection;
 use Illuminate\Support\Str;
 
+/**
+ * Class Collection
+ *
+ * @package Tymon\JWTAuth\Claims
+ */
 class Collection extends IlluminateCollection
 {
     /**

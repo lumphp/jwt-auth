@@ -24,21 +24,21 @@
         }
     ],
     "require": {
-        "php": "^7.2",
-        "illuminate/queue": "^7.0",
-        "illuminate/auth": "^7.0",
-        "illuminate/contracts": "^7.0",
-        "illuminate/http": "^7.0",
-        "illuminate/support": "^7.0",
+        "php": "^7.3",
+        "illuminate/queue": "^8.0",
+        "illuminate/auth": "^8.0",
+        "illuminate/contracts": "^8.0",
+        "illuminate/http": "^8.0",
+        "illuminate/support": "^8.0",
         "lcobucci/jwt": "^3.2",
         "namshi/jose": "^7.2",
         "nesbot/carbon": "^2.0",
         "ext-json": "*"
     },
     "require-dev": {
-        "illuminate/console": "^7",
-        "illuminate/database": "^7",
-        "illuminate/routing": "^7",
+        "illuminate/console": "^8",
+        "illuminate/database": "^8",
+        "illuminate/routing": "^8",
         "mockery/mockery": ">=0.9.9",
         "phpunit/phpunit": "~6.0"
     },

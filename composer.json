@@ -30,7 +30,7 @@
         "illuminate/contracts": "^8.0",
         "illuminate/http": "^8.0",
         "illuminate/support": "^8.0",
-        "lcobucci/jwt": "^3.2",
+        "lcobucci/jwt": "3.3.0",
         "namshi/jose": "^7.2",
         "nesbot/carbon": "^2.0",
         "ext-json": "*"

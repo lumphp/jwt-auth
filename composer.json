@@ -24,7 +24,7 @@
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^7.3|8.0^",
         "illuminate/container": "^8.0",
         "illuminate/queue": "^8.0",
         "illuminate/auth": "^8.0",

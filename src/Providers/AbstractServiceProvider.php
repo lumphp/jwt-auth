@@ -14,6 +14,8 @@ namespace Tymon\JWTAuth\Providers;
 use Illuminate\Support\ServiceProvider;
 use Lcobucci\JWT\Builder as JWTBuilder;
 use Lcobucci\JWT\Parser as JWTParser;
+use Lcobucci\JWT\Signer\Hmac\Sha256;
+
 use Namshi\JOSE\JWS;
 use Tymon\JWTAuth\Blacklist;
 use Tymon\JWTAuth\Claims\Factory as ClaimFactory;
@@ -40,6 +42,11 @@ use Tymon\JWTAuth\Providers\JWT\Lcobucci;
 use Tymon\JWTAuth\Providers\JWT\Namshi;
 use Tymon\JWTAuth\Validators\PayloadValidator;
 
+/**
+ * Class AbstractServiceProvider
+ *
+ * @package Tymon\JWTAuth\Providers
+ */
 abstract class AbstractServiceProvider extends ServiceProvider
 {
     /**

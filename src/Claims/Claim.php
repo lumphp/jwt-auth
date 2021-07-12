@@ -16,6 +16,11 @@ use Illuminate\Contracts\Support\Jsonable;
 use JsonSerializable;
 use Tymon\JWTAuth\Contracts\Claim as ClaimContract;
 
+/**
+ * Class Claim
+ *
+ * @package Tymon\JWTAuth\Claims
+ */
 abstract class Claim implements Arrayable, ClaimContract, Jsonable, JsonSerializable
 {
     /**

@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of jwt-auth.
  *
@@ -8,7 +7,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Tymon\JWTAuth\Claims;
 
 use DateInterval;
@@ -16,6 +14,11 @@ use DateTimeInterface;
 use Tymon\JWTAuth\Exceptions\InvalidClaimException;
 use Tymon\JWTAuth\Support\Utils;
 
+/**
+ * Trait DatetimeTrait
+ *
+ * @package Tymon\JWTAuth\Claims
+ */
 trait DatetimeTrait
 {
     /**
@@ -28,18 +31,16 @@ trait DatetimeTrait
     /**
      * Set the claim value, and call a validate method.
      *
-     * @param  mixed  $value
-     *
-     * @throws \Tymon\JWTAuth\Exceptions\InvalidClaimException
+     * @param mixed $value
      *
      * @return $this
+     * @throws \Tymon\JWTAuth\Exceptions\InvalidClaimException
      */
     public function setValue($value)
     {
         if ($value instanceof DateInterval) {
             $value = Utils::now()->add($value);
         }
-
         if ($value instanceof DateTimeInterface) {
             $value = $value->getTimestamp();
         }
@@ -52,7 +53,7 @@ trait DatetimeTrait
      */
     public function validateCreate($value)
     {
-        if (! is_numeric($value)) {
+        if (!is_numeric($value)) {
             throw new InvalidClaimException($this);
         }
 
@@ -62,7 +63,7 @@ trait DatetimeTrait
     /**
      * Determine whether the value is in the future.
      *
-     * @param  mixed  $value
+     * @param mixed $value
      *
      * @return bool
      */
@@ -74,7 +75,7 @@ trait DatetimeTrait
     /**
      * Determine whether the value is in the past.
      *
-     * @param  mixed  $value
+     * @param mixed $value
      *
      * @return bool
      */
@@ -86,7 +87,7 @@ trait DatetimeTrait
     /**
      * Set the leeway in seconds.
      *
-     * @param  int  $leeway
+     * @param int $leeway
      *
      * @return $this
      */

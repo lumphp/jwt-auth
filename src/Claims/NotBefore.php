@@ -13,6 +13,11 @@ namespace Tymon\JWTAuth\Claims;
 
 use Tymon\JWTAuth\Exceptions\TokenInvalidException;
 
+/**
+ * Class NotBefore
+ *
+ * @package Tymon\JWTAuth\Claims
+ */
 class NotBefore extends Claim
 {
     use DatetimeTrait;

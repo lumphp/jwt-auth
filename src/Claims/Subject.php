@@ -11,6 +11,11 @@
 
 namespace Tymon\JWTAuth\Claims;
 
+/**
+ * Class Subject
+ *
+ * @package Tymon\JWTAuth\Claims
+ */
 class Subject extends Claim
 {
     /**

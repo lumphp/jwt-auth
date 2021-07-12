@@ -11,6 +11,11 @@
 
 namespace Tymon\JWTAuth\Claims;
 
+/**
+ * Class JwtId
+ *
+ * @package Tymon\JWTAuth\Claims
+ */
 class JwtId extends Claim
 {
     /**

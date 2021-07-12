@@ -15,6 +15,11 @@ use Tymon\JWTAuth\Exceptions\InvalidClaimException;
 use Tymon\JWTAuth\Exceptions\TokenExpiredException;
 use Tymon\JWTAuth\Exceptions\TokenInvalidException;
 
+/**
+ * Class IssuedAt
+ *
+ * @package Tymon\JWTAuth\Claims
+ */
 class IssuedAt extends Claim
 {
     use DatetimeTrait {
